@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -1082,7 +1082,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #ffffff;
   text-decoration: underline;
 }
 a:focus {
@@ -4168,7 +4168,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 120px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4275,10 +4275,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
+    display: flex;
+    align-items: center;
+    float: left;
+  height: 100px;
+/*  padding: 15px 15px;*/
+  font-size: 96%;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4286,7 +4288,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+    padding: 7px 14px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -6524,6 +6526,9 @@ button.close {
 }
 .pull-left {
   float: left !important;
+}
+.pull-left > img {
+    height: 100%;
 }
 .hide {
   display: none !important;
