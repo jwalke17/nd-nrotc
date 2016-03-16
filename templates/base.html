@@ -1,42 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}: NROTC Notre Dame</title>
 
     <!--  Favicon  -->
-    <link rel="icon" href="static/icons/favicon.ico" />
+    <link rel="icon" href="/static/icons/favicon.ico" />
+    
     <!--  Mobile Device icons  -->
     <link rel="apple-touch-icon" sizes="57x57" href="/static/icons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/static/icons/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="/static/icons/apple-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/apple-icon-144x144.png" />
-    <!-- Bootstrap -->
-    <link href="static/css/bootstrap.css" rel="stylesheet" />
-    <link href="static/css/carousel.css" rel="stylesheet" />
     
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--  CSS  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/static/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="/static/css/nav.css"> <!-- navbar styling -->
+    <link rel="stylesheet" href="/static/css/slider.css"> <!-- carousel styling -->
+    
+    
+    <!--  Some of the scripts  -->
+	<script src="/static/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- Do not upgrade to latest jquery; breaks dependencies in scripts -->
 </head>
-
 <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/static/js/jquery.fittext.js"></script>
+	<header class="navbar-header">
+		<div class="navbar-logo"><a href="#0"><img src="/static/icons/icon-web-size.png" alt="Logo"></a></div>
+
+		<nav>
+			<ul class="navbar-secondary-nav">
+                <li><a href="#0">Log In</a></li>
+			</ul>
+		</nav> <!-- navbar-nav -->
+
+		<a class="navbar-primary-nav-trigger" href="#0">
+			<span class="navbar-menu-text">Menu</span>
+            <span class="navbar-menu-icon"></span>
+		</a> <!-- navbar-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="navbar-primary-nav">
+			<li class="navbar-label">About us</li>
+
+			<li><a href="#0">Who We Are</a></li>
+			<li><a href="#0">Unit Staff</a></li>
+			<li><a href="#0">History</a></li>
+            <li><a href="#0">Contact Us</a></li>
+            
+            <li class="navbar-label">NLW</li>
+            
+            <li><a href="#0">What is NLW</a></li>
+            <li><a href="#0">Registration</a></li>
+            <li><a href="#0">Online Payment</a></a></li>
+            <li><a href="#0">FAQs</a></a></li>
+            <li><a href="#0">Previous Highlights</a></a></li>
+
+            <li class="navbar-label">Prospective Students</li>
+            
+            <li><a href="#0">Application Process</a></li>
+            <li><a href="#0">O-Week</a></li>
+            <li><a href="#0">Life at College</a></li>
+            <li><a href="#0">Naval Science Curriculum</a></li>
+            <li><a href="#0">Summer Training</a></li>
+            <li><a href="#0">Commissioning &amp; Careers</a></li>
+            
+            <li class="navbar-label">Activities</li>
+            
+            <li><a href="#0">Grogan Society</a></li>
+            <li><a href="#0">Trident Naval Society</a></li>
+            <li><a href="#0">Irish Pennant</a></li>
+
+            <li class="navbar-label">Alumni</li>
+            
+            <li><a href="https://www.facebook.com/NDROTCAlumni/">Alumni Facebook Community</a></li>
+            <li><a href="https://www.linkedin.com/groups/8489078/profile">Alumni Linkedin Group</a></li>
+            
+            <li class="navbar-label">Current Students</li>
+            
+            <li><a href="#0">Log in</a></li>
+
+			<li class="navbar-label">Follow us</li>
+			
+			<li><a href="https://www.facebook.com/NDNROTC/">NROTC Notre Dame Facebook Page</a></li>
+		</ul>
+	</nav>
     {% block content %}
     {% endblock %}
-    <script src="/static/js/hamburgler.js"> </script>
-    <link rel="stylesheet" href="/static/css/hamburgler.css">
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/static/js/bootstrap.min.js"></script>
+<!--    <script src="/static/js/jquery-2.1.1.js"></script>-->
+    <script src="/static/js/slider-main.js"></script> <!-- Resource jQuery -->
+    <script src="/static/js/nav-main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>
