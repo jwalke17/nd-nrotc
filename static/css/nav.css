@@ -70,7 +70,7 @@ html, body {
 @media only screen and (min-width: 768px) {
   .navbar-header {
     height: 80px;
-    background: transparent;
+    background: rgb(0, 155, 72);
     box-shadow: none;
   }
 }
