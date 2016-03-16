@@ -6,7 +6,7 @@ from jinja2 import Template
 
 @app.route("/")
 def index():
-    return render_template("home.html")
+    return render_template("combo.html")
 
 '''
 @app.route("/who-we-are")

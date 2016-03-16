@@ -9,13 +9,9 @@ Primary style
   box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
   font-size: 100%;
-  font-family: arial, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: rgba(2, 23, 37, 0.7);
   background-color: white;
 }
@@ -25,7 +21,7 @@ body.overflow-hidden {
 }
 
 a {
-  color: rgb(0, 155, 72); /* white; */
+  color: white;
   text-decoration: none;
 }
 
@@ -59,7 +55,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 155, 72); /* rgb(108, 120, 128); */
+  background: rgb(108, 120, 128);
   height: 50px;
   width: 100%;
   z-index: 3;
@@ -92,7 +88,7 @@ html, body {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -80px;
-    background-color: rgb(0, 155, 72); /* rgb(108, 120, 128); */
+    background-color: rgb(108, 120, 128);
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -107,7 +103,7 @@ html, body {
   }
   .navbar-header.menu-is-open {
     /* add a background color to the header when the navigation is open */
-    background-color: rgb(0, 155, 72); /* rgb(108, 120, 128); */
+    background-color: rgb(108, 120, 128);
   }
 }
 
@@ -151,7 +147,7 @@ html, body {
 }
 .navbar-secondary-nav a {
   display: inline-block;
-  color: #dcb439;
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -170,13 +166,12 @@ html, body {
   background-color: #03263d;
 }
 .navbar-primary-nav-trigger .navbar-menu-text {
-  color: #dcb439;
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
   /* hide the text on small devices */
   display: none;
 }
-
 .navbar-primary-nav-trigger .navbar-menu-icon {
   /* this span is the central line of the menu icon */
   display: inline-block;
@@ -192,7 +187,7 @@ html, body {
   transform: translateX(-50%) translateY(-50%);
   width: 18px;
   height: 2px;
-  background-color: #dcb439;
+  background-color: white;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -203,7 +198,7 @@ html, body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #dcb439;
+  background-color: white;
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
   -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
@@ -219,7 +214,7 @@ html, body {
   background-color: rgba(255, 255, 255, 0);
 }
 .navbar-primary-nav-trigger .navbar-menu-icon.is-clicked::before, .navbar-primary-nav-trigger .navbar-menu-icon.is-clicked::after {
-  background-color: #dcb439;
+  background-color: white;
 }
 .navbar-primary-nav-trigger .navbar-menu-icon.is-clicked::before {
   top: 0;
@@ -240,7 +235,7 @@ html, body {
 @media only screen and (min-width: 768px) {
   .navbar-primary-nav-trigger {
     width: 100px;
-    padding-left: .5em;
+    padding-left: 1em;
     background-color: transparent;
     height: 30px;
     line-height: 30px;
@@ -313,7 +308,7 @@ html, body {
   transition: background 0.2s;
 }
 .no-touch .navbar-primary-nav a:hover {
-  background-color: rgba(220, 180, 57, 0.25);
+  background-color: rgba(220, 180, 57, 0.58);
 }
 .navbar-primary-nav .navbar-label {
   color: #dcb439;
@@ -322,6 +317,33 @@ html, body {
   font-size: 14px;
   font-size: 0.875rem;
   margin: 2.4em 0 .8em;
+}
+.navbar-primary-nav .navbar-social {
+  display: inline-block;
+  margin: 0 .4em;
+}
+.navbar-primary-nav .navbar-social a {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-image: url("../img/navbar-socials.svg");
+  background-repeat: no-repeat;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.navbar-primary-nav .navbar-facebook a {
+  background-position: 0 0;
+}
+.navbar-primary-nav .navbar-linkedin a {
+  background-position: -44px 0;
+}
+.navbar-primary-nav .navbar-dribbble a {
+  background-position: -88px 0;
+}
+.navbar-primary-nav .navbar-twitter a {
+  background-position: -132px 0;
 }
 .navbar-primary-nav.is-visible {
   -webkit-transform: translateY(0);
