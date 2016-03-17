@@ -76,6 +76,11 @@ html, body {
 }
 @media only screen and (min-width: 1170px) {
   .navbar-header {
+      /* most of this makes the header transparent as you scroll to the top of
+      screen on a laptop. We didn't want that in our website, so we added the last line
+      (ie `background: rgb(0, 155, 72)`) at the end so that it basically ignores this code
+      and sets background of the navbar header to the decided color
+      */
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
