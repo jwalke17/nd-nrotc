@@ -25,7 +25,7 @@ body.overflow-hidden {
 }
 
 a {
-  color: rgb(0, 155, 72); /* white; */
+  color: rgb(0, 155, 72);
   text-decoration: none;
 }
 
@@ -56,31 +56,19 @@ html, body {
 }
 
 .navbar-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgb(0, 155, 72); /* rgb(108, 120, 128); */
-  height: 50px;
-  width: 100%;
-  z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media only screen and (min-width: 768px) {
-  .navbar-header {
-    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: transparent;
-    box-shadow: none;
-  }
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (min-width: 1170px) {
+
+@media only screen and (min-width: 240px) {
   .navbar-header {
-      /* most of this makes the header transparent as you scroll to the top of
-      screen on a laptop. We didn't want that in our website, so we added the last line
-      (ie `background: rgb(0, 155, 72)`) at the end so that it basically ignores this code
-      and sets background of the navbar header to the decided color
-      */
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -92,17 +80,43 @@ html, body {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: rgb(0, 155, 72);
   }
-  .navbar-header.is-fixed {
+
+@media only screen and (min-width: 768px) {
+  .navbar-header {
+    /*   Makes the navbar taller on wider browsers   */
+    height: 80px;
+  }
+}
+
+
+.navbar-header.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -80px;
     background-color: rgb(0, 155, 72); /* rgb(108, 120, 128); */
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
+    
+@media only screen and (min-width: 240px) {
+  .navbar-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport 
+      This setting is for the thinner navbar that appears for screens SMALLER
+      than 768px */
+    top: -50px;
+  }
+}
+    
+@media only screen and (min-width: 768px) {
+  .navbar-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport
+      This setting is for the thicker navbar that appears for screens LARGER
+      than 768px */
+    top: -80px;
+  }
+}
+    
   .navbar-header.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
@@ -113,7 +127,7 @@ html, body {
   }
   .navbar-header.menu-is-open {
     /* add a background color to the header when the navigation is open */
-    background-color: rgb(0, 155, 72); /* rgb(108, 120, 128); */
+    background-color: rgb(0, 155, 72);
   }
 }
 
@@ -173,7 +187,6 @@ html, body {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #03263d;
 }
 .navbar-primary-nav-trigger .navbar-menu-text {
   color: #dcb439;
@@ -349,60 +362,5 @@ html, body {
   .navbar-primary-nav .navbar-label {
     font-size: 16px;
     font-size: 1rem;
-  }
-}
-
-.navbar-intro {
-  position: relative;
-  height: 100%;
-  background: url("../img/navbar-background-img.jpg") no-repeat center center;
-  background-size: cover;
-  z-index: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.navbar-intro h1 {
-  position: absolute;
-  width: 90%;
-  max-width: 1170px;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  color: white;
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 300;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .navbar-intro h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .navbar-intro {
-    height: 700px;
-  }
-}
-
-.navbar-main-content {
-  position: relative;
-  z-index: 1;
-}
-.navbar-main-content p {
-  line-height: 1.6;
-  margin: 2em 0;
-}
-@media only screen and (min-width: 1170px) {
-  .navbar-main-content p {
-    font-size: 20px;
-    font-size: 1.25rem;
   }
 }
