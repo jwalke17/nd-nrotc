@@ -116,7 +116,6 @@ html, body {
       than 768px */
     top: -80px;
   }
-}
     
   .navbar-header.is-visible {
     /* if the user changes the scrolling direction, we show the header */
