@@ -8,8 +8,9 @@ from jinja2 import Template
 def index():
     return render_template("home.html")
 
-@app.route("/<page-name>")
-    return render_template("%s.html" % page-name)
+@app.route("/<pagename>")
+def extension(pagename):
+    return render_template("%s.html" % pagename)
 
 if __name__ == "__main__":
     app.debug = True
