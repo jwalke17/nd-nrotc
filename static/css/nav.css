@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    color: rgb(0, 155, 72);
+    text-decoration: none;
+}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
