@@ -1,0 +1,54 @@
+/*
+NOTRE DAME OFFICIAL COLORS:
+Blue:           rgb(12,35,64)       / #0C2340
+Gold:           rgb(201,151,0)      / #C99700
+Metallic Gold:  rgb(174,143,64)     / #AE9142
+
+Pantone460:     rgb(230,212,124)    / #F6E7A1 (light yellow)
+Pantone378:     rgb(88,96,26)       / #465510 (dark forest green)
+Pantone613:     rgb(179,153,0)      / #999623 (olive green)
+PantoneBlack4:  rgb(49,37,28)       / #302205 (black)
+Pantone1817:    rgb(101,50,51)      / #5F1709 (russet red)
+Pantone7710:    rgb(0,165,181)      / #5AABBC (sky blue)
+
+Pantone1805:    rgb(177,37,44)      / #AA272F (crimson red)
+Pantone723:     rgb(179,105,33)     / #BA6F2E (mud orange)
+Pantone128:     rgb(245,212,77)     / #F2D653 (sun yellow)
+Pantone7519:    rgb(93,73,58)       / #5A412F (brown)
+Pantone7406:    rgb(242,195,0)      / #FFCF01 (saturated yellow)
+Pantone348:     rgb(10,132,61)      / #00843D (clover green)
+Pantone7448:    rgb(75,55,75)       / #4A3651 (dark purple)
+
+*/
+
+div.HUD {top:0; left:0; position:fixed; display:block; 
+    width:100%; height:60px; margin:0;
+    background-color:#465510; box-shadow:0px 3px 10px #000000}
+
+body.HUD {margin-top:70px; box-shadow:0px 3px 10px #000000;}
+
+img.HUD {position:absolute;
+    top:50%; right:10px; height:80%; width:auto; transform:translate(0,-50%);
+    background-color: none; transition: background .2s;}
+
+div.HUD_text {position:absolute; display:inline-block;
+    left:20px; top:50%; transform:translate(0,-50%); 
+    color:#C99700; background-color: none;}
+
+img.HUD:hover {background-color: #00843D;}
+
+/* Next step: add dropdown menu. May have to use JS
+
+div.HUD_dropdown {
+display:none;
+transform: translate(0,-100%);
+transition: transform .3s;
+}
+
+div.HUD_dropdown .visible {
+display:block;
+transform: translate(0,0);
+}
+
+*/
+
