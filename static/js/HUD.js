@@ -1,5 +1,5 @@
-jQuery(document).ready(function($){
-    $("#HUD_btn").click( function() {
-       $(".HUD_dropdown").toggleClass("visible");
+$(document).ready(function($){
+    $("#HUD_btn").click(function(){
+        $(".HUD_dropdown").toggleClass("visible");
     });
 });

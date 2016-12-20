@@ -21,14 +21,18 @@ Pantone7448:    rgb(75,55,75)       / #4A3651 (dark purple)
 
 */
 
+/* Styles for the heads-up display ---------------------------------------- */
+
 div.HUD {
     top:0; left:0; position:fixed; display:block; 
     width:100%; height:60px; margin:0;
     background-color:#465510; box-shadow:0px 3px 10px #000000}
 
-body.HUD {margin-top:70px; box-shadow:0px 3px 10px #000000;}
-
-img.HUD {position:relative; height:100%; width:auto;}
+body {
+    margin:10px;
+    margin-top:70px;
+    box-shadow:0px 3px 10px #000000;
+}
 
 div.HUD_text {position:absolute; display:inline-block;
     left:20px; top:50%; transform:translate(0,-50%); 
@@ -44,25 +48,32 @@ div.HUD_img {
 
 div.HUD_img:hover {background-color: #00843D;}
 
-div.HUD_dropdown {
-    display:none;
-    position:absolute;
-    right:0%; top:100%;
-    width:150px; height:auto;
-    background-color: #F6E7A1;
-    box-shadow: 0px 3px 3px #000000;
-}
+img.HUD {position:relative; height:100%; width:auto;}
 
 .HUD_dropdown.visible {
+    transform:translateY(0px);
+    box-shadow: 0px 3px 10px #000000;
+}
+
+div.HUD_dropdown {
     display:inline-block;
+    position:fixed;
+    right:0%; top:60px;
+    width:150px; height:auto;
+    background-color: #F6E7A1;
+    box-shadow: 0px 0px 0px #000000;
+    transform: translateY(-100%);
+    transition: transform .4s;
 }
 
 .HUD_dropdown_element {
     display:block;
     text-align: center;
+    padding:10px;
     font-size: 150%; font-weight: bolder;
     text-decoration: none;
     color: #0C2340;
+    transition: background .3s;
 }
 
 .HUD_dropdown_element:hover {
