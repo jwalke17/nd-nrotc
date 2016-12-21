@@ -1,6 +1,5 @@
 /* INFORMATION ---------------------------------------------
 Created by Jasmine Walker for use by NROTC Notre Dame
-
 */
 
 /*
@@ -38,6 +37,7 @@ main {
     top:0;
     height:60px; width:100%;
     background-color: transparent;
+    box-shadow: 0px 3px 5px #000000;
 }
 
 div.HUD_background {
@@ -53,52 +53,40 @@ span.HUD_element {
     display:inline-block;
     top:50%; transform:translateY(-50%);
     width: auto; height: 100%;
-    background-color: #AE9142;
-
-}
-
-span.HUD_element.HUD_nav_btn {
-    float: right;
-    right:10px;
     background-color: transparent;
-    height:80%;
-        
+    transition: background .3s;
+
 }
 
-span.HUD_element.HUD_home_btn {
-    background-color: transparent;
-    left: 5px;
-    height:90%;
-}
+span.HUD_element.HUD_nav_btn {float: right;right:10px;height:80%;}
 
-span.HUD_element:hover {
-    background-color: #00843D;
-}
+span.HUD_element.HUD_home_btn {left: 5px;height:90%;}
 
-.HUD_nav_btn img , .HUD_home_btn img{
-    width:auto; height:100%;
-}
+span.HUD_element:hover {background-color: #00843D;}
+
+.HUD_nav_btn img, .HUD_home_btn a img {width:auto; height:100%;}
 
 nav.HUD_dropdown {
     position:absolute; right:0; top:100%;
     display:inline-block;
     height:auto; width:150px; 
     background-color: #F6E7A1;
+    box-shadow: 0px 0px 0px #000000;
     transform: translateY(-100%);
     transition: transform .3s;
 }
 .HUD_dropdown.visible {
+    box-shadow: 0px 3px 5px #000000;
     transform:translateY(0);
 }
 
 nav.HUD_dropdown a {
-    display:block; 
+    display:block; padding:5px;
     text-align: center; text-decoration: none;
     font-weight: bold; background-color: transparent;
     color:#0C2340;
     transition: background .3s;
 }
 
-nav.HUD_dropdown a:hover {
-    background-color:#C99700;
-}
+nav.HUD_dropdown a:hover {background-color:#C99700;}
+nav.HUD_dropdown a:visited {color:#465510;}
