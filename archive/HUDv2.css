@@ -64,7 +64,7 @@ span.HUD_element.HUD_home_btn {left: 10px;height:80%;}
 
 span.HUD_element:hover {background-color: #00843D;}
 
-.HUD_nav_btn img, .HUD_home_btn a img {width:auto; height:100%;}
+.HUD_nav_btn img, .HUD_home_btn span img {width:auto; height:100%;}
 
 nav.HUD_dropdown {
     position:absolute; right:0; top:100%;
@@ -80,7 +80,7 @@ nav.HUD_dropdown.visible {
     transform:translateY(0);
 }
 
-nav.HUD_dropdown a {
+nav.HUD_dropdown span {
     display:block; margin:5px; padding:5px;
     text-align: center; text-decoration: none;
     font-weight: bold; font-size:20px; font-family: serif;
@@ -88,4 +88,4 @@ nav.HUD_dropdown a {
     transition: background .2s;
 }
 
-nav.HUD_dropdown a:hover {background-color:#C99700 ; color:#302205}
+nav.HUD_dropdown span:hover {background-color:#C99700 ; color:#302205}
