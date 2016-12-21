@@ -3,25 +3,26 @@
 <link rel="stylesheet" href="/static/css/HUD.css">
 
 <html>
-    <head><title>NROTC Notre Dame</title></head>
-    <div class="HUD_dropdown">
-        <a class="HUD_dropdown_element" href="#0">One</a>
-        <a class="HUD_dropdown_element" href="#0">Two</a>
-        <a class="HUD_dropdown_element" href="#0">Three</a>
-        <a class="HUD_dropdown_element" href="#0">Four</a>
-    </div>
-    <div class="HUD">
-        <div class="HUD_text"><h1>NROTC Notre Dame</h1></div>
-        <div class="HUD_img" id="HUD_btn">
-            <img class="HUD" src="/static/icons/icon-large.png" alt="Logo">
-        </div>
-    </div>
+    <head><title>Notre Dame NROTC</title></head>
     <body>
-        <div style="height:400px; background-color:seagreen;"></div>
-        <div style="height:400px; background-color:darkgreen;"></div>
+        <div class="HUD_main">
+            <nav class="HUD_dropdown">
+                <a href="#0">One</a>
+                <a href="#0">Two</a>
+                <a href="#0">Three</a>
+                <a href="#0">Four</a>
+            </nav>
+            <div class="HUD_background"></div>
+            <span class="HUD_element HUD_home_btn"><img src="/static/icons/icon-web-size.png" alt="Logo"></span>
+            <span class="HUD_element HUD_nav_btn"><img src="/static/icons/icon-large.png" alt="Crest"></span>
+        </div>
+        <main>
+            <div style="height:400px; background-color:#0C2340;"></div>
+            <div style="height:400px; background-color:#C99700;"></div>
+        </main>
     </body>
 </html>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="/static/js/HUD.js"></script>
+<script src="static/js/HUD.js"></script>
