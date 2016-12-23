@@ -3,12 +3,18 @@
 <link rel="stylesheet" href="/static/css/HUD.css">
 
 <style>
-	div.staff {display:table;background-color:#F6E7A1;margin-bottom:20px;padding:10px;box-shadow:0px 3px 5px #000000;}
-	.staff figure {margin:0; padding:15px; padding-bottom:0px; width:300px;float:left;}
+	div.staff { display:table;
+		margin-bottom:20px;padding:20px;
+		background-color:#F6E7A1;box-shadow:0px 3px 5px #000000;
+	}
+	.staff figure {
+		margin:0;padding-right:10px;
+		width:300px;float:left;
+	}
 	.staff figure figcaption {text-align:center; font-family:monospace; font-size:18px; font-weight: bold;}
 	.staff figure img {width:100%;}
-	.staff p, .staff figure figcaption {color:#0C2340;}
-	.staff p {margin:10px;}
+	.staff h2 {text-align: center; font-family: monospace; border-bottom: 1px solid #C99700;}
+	.staff h2, .staff p, .staff figure figcaption {color:#0C2340;}
 </style>
 
 <html>
@@ -17,6 +23,7 @@
         <nav class="HUD_main"></nav>
         <main>
 			<div class="staff">
+				<h2>COMMANDING OFFICER</h2>
 				<figure>
 					<img src="/static/images/unit-staff/CAPT_Carter.jpg" alt="CAPT Carter">
 					<figcaption>CAPT Carter</figcaption>
@@ -31,6 +38,7 @@
 			</div>
 			
 			<div class="staff">
+				<h2>EXECUTIVE OFFICER</h2>
 				<figure>
 					<img src="/static/images/unit-staff/CDR_Dittbenner.jpg" alt="CDR Dittbenner">
 					<figcaption>CDR Dittbenner</figcaption>
