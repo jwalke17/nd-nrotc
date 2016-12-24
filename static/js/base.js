@@ -13,6 +13,10 @@ $(document).ready(function($){
             $(".HUD_dropdown").toggleClass("visible");
     });
 	
+	$(document).delegate(".HUD_DE", "mouseenter mouseleave", function(e){
+			$(this).children(".HUD_DE_dropdown").toggleClass("visible");
+	});
+	
 	$(document).delegate(document, "scroll", function(){
 		var currscroll = $(document).scrollTop();
 		if (currscroll <= min_height){
