@@ -101,6 +101,31 @@ main {}
 
 .HUD_home_btn:hover, .HUD_nav_btn:hover {background-color:#999623; }
 
+/* Main Default ------------------------------------------------------------- */
+
+h1 {text-align: center; margin:0px; margin-bottom:10px; font-family: monospace;}
+main .default {display:table; width:100%; box-sizing: border-box;
+	margin-bottom:10px; padding:20px;
+	background-color:#F6E7A1;
+}
+
+.default figure {
+	margin:0;padding-left:10px;
+	width:575px; float:right;
+}
+
+@media screen and (max-width:768px) { 
+	.default figure{float:none; display:inline-block; padding:0px; width:100%;} 
+	.default {text-align: center;}
+}
+
+.default figure figcaption {text-align:center; font-family:monospace; font-size:16px; font-weight: bold;}
+.default figure img {width:100%;}
+.default h2 {font-family: monospace; border-bottom: 1px solid #C99700;}
+h1, .default h2, .default p, .default figure figcaption {color:#0C2340;}
+
+
+
 /* Footer ------------------------------------------------------------------- */
 
 .footer_main {padding:10px 30px 10px 30px;text-align:center;}
