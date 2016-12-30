@@ -1,9 +1,9 @@
 var scrollpos = 0;
-var min_height = 60;
 
 $(document).ready(function($){
 	
 	$(".HUD_main").load("/static/html/HUD.html");
+	$(".footer_main").load("/static/html/footer.html");
 	
     $(document).delegate(".HUD_nav_btn", "click", function(){
         $(".HUD_dropdown").toggleClass("visible");
@@ -19,7 +19,8 @@ $(document).ready(function($){
 	
 	$(document).delegate(document, "scroll", function(){
 		var currscroll = $(document).scrollTop();
-		if (currscroll <= min_height){
+		var HUDheight = $(".HUD_main").height();
+		if (currscroll <= HUDheight){
 			$(".HUD_main").addClass("visible");
 		}else if( currscroll > scrollpos ){
 			if ($(".HUD_main").hasClass("visible") &&  !($(".HUD_dropdown").hasClass("visible")) )

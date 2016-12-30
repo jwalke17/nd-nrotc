@@ -24,11 +24,13 @@ Pantone348:     rgb(10,132,61)      / #00843D (clover green)
 Pantone7448:    rgb(75,55,75)       / #4A3651 (dark purple)
 */
 
-/* HUD ----------------------------------------------------------*/
+html {background-color:azure;}
 
-body {margin:0;}
+body {margin:70px 30px 0px 30px;padding:0px 0px 0px 0px;}
 
-main {margin:10px; margin-top:70px;}
+main {}
+
+/* HUD ----------------------------------------------------------------- */
 
 .HUD_main {
 	position:fixed; height:60px; width:100%; left:0; top:0; 
@@ -38,7 +40,7 @@ main {margin:10px; margin-top:70px;}
 }
 .HUD_main.visible  {
 	transform: translate(0%,0%);
-	box-shadow: 0px 3px 5px #000000;
+	box-shadow: 0px 3px 10px #000000;
 	transition: transform .2s;
 }
 
@@ -53,7 +55,7 @@ main {margin:10px; margin-top:70px;}
 }
 .HUD_dropdown.visible{
 	transform: translate(0%,0%);
-	box-shadow: 0px 3px 5px #000000;
+	box-shadow: 0px 3px 10px #000000;
 	transition: transform .3s;
 }
 
@@ -62,25 +64,27 @@ main {margin:10px; margin-top:70px;}
 .HUD_DE {position:relative;flex-grow:1;}
 
 .HUD_DE_main {text-align:center; background-color:#F6E7A1; padding:5px;}
-.HUD_DE_main a {display:block; padding:10px 0px 10px 0px;
+.HUD_DE_main a {display:block; padding:5px;
 	text-align:center; text-decoration: none;
-	font-size: 18px; color:#0C2340; font-weight:bold;}
+	font-size: 18px; color:#0C2340; font-weight:bold;
+	transition:background .3s;}
 .HUD_DE_main a:hover {background-color:#999623;}
 
-.HUD_DE_dropdown {position:absolute; display:inline-flex; flex-wrap:wrap;
-	top:100%; z-index: -1; left:0; width:100%; 
+.HUD_DE_dropdown {position:absolute; display:inline-flex; flex-wrap:wrap; flex-direction: column;
+	top:100%; z-index: -1; left:5%; width:90%; 
 	transform:translate(0,-100%);
 	transition:transform .3s, box-shadow 0s linear .3s;
 	background-color:#F6E7A1;}
 
 .HUD_DE_dropdown.visible {
-	transform:translate(0,0); box-shadow: 0px 3px 5px #000000;
+	transform:translate(0,0); box-shadow: 0px 3px 10px #000000;
 	transition:transform .3s;}
 
-.HUD_DE2 {padding:5px;flex-grow:1;}
-.HUD_DE2 a {display:block; padding:10px;
+.HUD_DE2 {padding:3px;flex-grow:1;}
+.HUD_DE2 a {display:block; padding:3px;
 	text-align:center; text-decoration:none;
-	font-size: 12px; color:#0C2340;}
+	font-size: 16px; color:#0C2340;
+	transition: background .3s;}
 .HUD_DE2 a:hover {background-color:#999623;}
 /**/
 
@@ -96,3 +100,8 @@ main {margin:10px; margin-top:70px;}
 .HUD_nav_btn  {right:5px;}
 
 .HUD_home_btn:hover, .HUD_nav_btn:hover {background-color:#999623; }
+
+/* Footer ------------------------------------------------------------------- */
+
+.footer_main {padding:10px 30px 10px 30px;text-align:center;}
+.footer_main div {border-top: 1px solid #AE9142; color:#AE9142; font-size:12px;}
