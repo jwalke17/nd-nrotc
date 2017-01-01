@@ -24,11 +24,11 @@ Pantone348:     rgb(10,132,61)      / #00843D (clover green)
 Pantone7448:    rgb(75,55,75)       / #4A3651 (dark purple)
 */
 
-html {background-color:azure;}
+html {background-color:#465510;}
 
-body {margin:70px 30px 0px 30px;padding:0px 0px 0px 0px;}
+body {margin:0px;padding:90px 30px 30px 30px;background-color:cornsilk;}
 
-main {}
+main {padding:10px;background-color:ivory;border-radius:10px;box-shadow: 0px 3px 10px #000000;}
 
 /* HUD ----------------------------------------------------------------- */
 
@@ -104,18 +104,19 @@ main {}
 /* Main Default ------------------------------------------------------------- */
 
 h1 {text-align: center; margin:0px; margin-bottom:10px; font-family: monospace;}
-main .default {display:table; width:100%; box-sizing: border-box;
+main .default {display:table; width:100%; box-sizing:border-box;
 	margin-bottom:10px; padding:20px;
-	background-color:#F6E7A1;
+	background-color:#F6E7A1; border-radius: 10px;
 }
 
 .default figure {
-	margin:0;padding-left:10px;
-	width:575px; float:right;
-}
+	margin:0px;margin-left:10px; background-color:ivory; padding:10px;border-radius: 10px;
+	width:570px; float:right; box-sizing:border-box;}
+
+.default figure img {border-radius: 10px;}
 
 @media screen and (max-width:768px) { 
-	.default figure{float:none; display:inline-block; padding:0px; width:100%;} 
+	.default figure{float:none; display:inline-block; margin:0px; width:100%;max-width: 570px;} 
 	.default {text-align: center;}
 }
 

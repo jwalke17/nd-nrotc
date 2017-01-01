@@ -3,21 +3,26 @@
 <link rel="stylesheet" href="/static/css/base.css">
 
 <style>
-	.default figure {width:300px;float:left;padding:0px;padding-right:10px;}
+	.default figure {width:300px;float:left;margin:0px;
+		margin-right:10px;box-sizing:border-box;}
+	.default figure image {box-sizing: border-box;}
 	@media screen and (max-width:768px) {
-		.default figure {float:none;padding:0px;}
+		.default figure {float:none; display:inline-block; margin:0px; width:100%;max-width: 300px;}
 	}
 </style>
 
 <html>
-	<head><title>NROTC Notre Dame</title></head>
+	<head>
+		<title>NROTC Notre Dame</title>
+		<link rel="icon" href="/static/icons/favicon.ico" />
+	</head>
 	<body>
 		<header class="HUD_main visible"></header>
 		<main>	
 			<h1>UNIT STAFF</h1>
 			<div class="default">
 				<h2>COMMANDING OFFICER</h2>
-				<figure style="width:300px;">
+				<figure>
 					<img src="/static/images/unit-staff/CAPT_Carter.jpg" alt="CAPT Carter">
 					<figcaption>CAPT John P Carter, USN</figcaption>
 				</figure>
@@ -49,9 +54,8 @@
 				<p>Commander Dittbenner&rsquo;s personal decorations include Defense Meritorious Service Medal (two awards), Meritorious Service Medal, Navy and Marine Corps Commendation Medal (five awards), Navy and Marine Corps Achievement Medal, and various unit and campaign awards.</p>
 				
 			</div>
-			
+			<div class="footer_main"></div>
 		</main>
-		<footer class="footer_main"></footer>
 	</body>
 </html>
 
