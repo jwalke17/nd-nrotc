@@ -24,9 +24,11 @@ Pantone348:     rgb(10,132,61)      / #00843D (clover green)
 Pantone7448:    rgb(75,55,75)       / #4A3651 (dark purple)
 */
 
-html {background-color:#465510;}
+html {background-color:#0C2340;}
 
-body {margin:0px;padding:90px 30px 30px 30px;background-color:#465510;}
+body {margin:0px;padding:90px 30px 30px 30px;
+	background-color:#0C2340; background-image: url(/static/images/misc/Battalion_2016.jpg);
+	background-attachment: fixed; background-size: cover;}
 
 main {padding:10px;background-color:ivory;border-radius:10px;}
 
@@ -44,7 +46,7 @@ main {padding:10px;background-color:ivory;border-radius:10px;}
 	transition: transform .2s;
 }
 
-.HUD_background {position:absolute; width:100%; height:100%; background-color: #00843D ;}
+.HUD_background {position:absolute; width:100%; height:100%; background-color:#465510;}
 
 .HUD_dropdown { 
 	display:inline-flex;
@@ -102,7 +104,7 @@ main {padding:10px;background-color:ivory;border-radius:10px;}
 .HUD_home_btn {left:5px;}
 .HUD_nav_btn  {right:5px;}
 
-.HUD_home_btn:hover, .HUD_nav_btn:hover {background-color:#465510; }
+.HUD_home_btn:hover, .HUD_nav_btn:hover {background-color:#999623; }
 
 /* Main Default ------------------------------------------------------------- */
 

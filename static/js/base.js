@@ -22,7 +22,7 @@ $(document).ready(function($){
 			$(this).children(".HUD_DE_dropdown").toggleClass("visible");
 	});
 	
-	// 
+	// scroll functions for hiding the nav bar
 	$(document).delegate(document, "scroll", function(){
 		var currscroll = $(document).scrollTop();
 		var HUDheight = $(".HUD_main").height();
